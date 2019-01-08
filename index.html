@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <title>Farmer Raj Guide</title>
+    <link rel='stylesheet' type='text/css' href='styles/style.css'>
+  </head>
+
+  <body>
+    <header>
+
+      <nav>
+        <div class='navigation'>
+          <ul id='header-bar'>
+            <li id='logo'></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class='container'>
+
+      <div class='search'>
+        <form class='search'>
+          <label for='search-box'>
+            <p class='heading'>Search by weedicide, pesticides and fertiliser by name:</p><br/>
+            <div class='ui-widget'>
+              <input id='search-box'/>
+            </div>
+          </label>
+        </form>
+      </div>
+
+      <div class='filler'>
+        - or -
+      </div>
+
+      <div class='med-categories'>
+          <p class='heading'>Plant Growth Techniques:</p><br/>
+          <div class='medCat' id='NRTIs'>
+            <button type='button' name='NRTI' class='medCats'>कीटनाशक</button>
+            <p>
+              एक पदार्थ जो कीड़ों या अन्य जीवों को नष्ट करने के लिए प्रयोग किया जाता है जो पौधों या जानवरों के लिए हानिकारक होते हैं
+            </p>
+          </div>
+          <div class='medCat' id='NNRTIs'>  
+            <button type='button' name='NNRTIs' class='medCats'>खरपतवारनाशी  </button>
+            <p>
+              विभिन्न अनाजों, दालों, फलों, सब्जियों की खेती की जाती है । जो मनुष्यों व जानवरों के लाभदायक होती है । विभिन्न प्रकार के अनाज उत्पन्न होने के साथ-साथ कुछ Unwanted Plants पौधे आदि भी उग आते है ।
+            </p>
+          </div>
+          <div class='medCat' id='PIs'>
+            <button type='button' name='PIs' class='medCats'>उर्वरक</button>
+            <p>
+              उर्वरक (Fertilizers) कृषि में उपज बढ़ाने के लिए प्रयुक्त रसायन हैं जो पेड-पौधों की वृद्धि में सहायता के लिए इस्तेमाल किए जाते हैं।
+            </p>
+          </div>
+          
+
+      <div class='filler'>
+        - or -
+      </div>
+
+      <div class='click-to-list'>
+        <button type='button' name='clickForFull' id='click-for-full'>click here to view a full list of farmer requirements </button>
+      </div>
+
+      <div class='meds-list'></div>
+    </div>
+
+    <div class='footer'>
+      This information not intended to serve as farmer requirement advice. Please read the <a href=''>Disclaimer</a>.
+    </div>
+
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js'></script>
+    <link rel='stylesheet' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css'/>
+    <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+    <script type='text/javascript' src='scripts/script.js'></script>
+
+  </body>
+</html>

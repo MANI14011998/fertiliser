@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title> किसान की आवश्यकताएं</title>
+    <link rel='stylesheet' type='text/css' href='../styles/med-style.css'/>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class='navigation'>
+          <ul id='header-bar'>
+            <a href='../index.html' style='text-decoration: none'><li id='logo'>किसान की आवश्यकताएँ</a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class='container'>
+      <div class='medication-name'>
+        <p id='medication-name'></p>
+      </div>
+
+      <div class='med-info-box'>
+        <div class='blurb'>
+          <div class='medication-picture'></div>
+          <p id='blurb'></p>
+        </div>
+      </div>
+
+      <div class='assistance-container'>
+        <div class='med-heading' id='mh-assist'>
+          इस आवश्यकता के लिए भुगतान करने में मदद करें
+        </div>
+
+        <div class='goodrx'>
+          <div class='good-rx-blurb'>Lowest national prices for <span id='med-name-here'></span>:</div>
+          <div class='good-rx-prices'><p id='price0'></p><p id='price1'></p><p id='price2'></p></div>
+          <div class='good-rx-pharmacies'><p id='pharm0'></p><p id='pharm1'></p><p id='pharm2'></p></div>
+          <div class='good-rx-coupons'><p id='coupon0'></p><p id='coupon1'></p><p id='coupon2'></p></div>
+          <div class='good-rx-footer'>स्थान-विशिष्ट मूल्य निर्धारण और कूपन के लिए, splitthreader वेबसाइट पर ले जाने के लिए नीचे क्लिक करें।</div>
+          <div class='good-rx-logo'><a id='goodrx-img'><img src='../assets/goodrx.png'/></a></div>
+        </div>
+
+        <div class='assistance-link'>
+          <div id='z1'>सहायता नीचे किसानों के निर्माता से उपलब्ध हो सकती है:</div><br>
+          <a id='asst-button'><button type='button' name='button' id='assistance-button'>क्लिक करें</button></a>
+        </div>
+      </div>
+
+      <div class='med-heading' id='mh-map'>
+        दवा सहायता कार्यक्रमों के साथ कम लागत वाले क्लीनिक खोजें
+      </div>
+
+      <div class='outer' style='width:100%; height:300px; position: relative; display: inline-block'>
+        <div class='map-submit'>
+          <input id='address' type='textbox'><br><br>
+          <input id='submit' type='button' value='Find Clinics'>
+        </div>
+        <div class='clinic-locator' style='width:360px; height:100%'>
+          <div id='map'></div>
+        </div>
+        <div class='clinic-results'>
+        </div>
+      </div>
+
+      <div class='adverse-events'>
+        <div class='med-heading'>
+          
+        </div>
+
+        <div class='med-blurb'>
+          
+        </div><br>
+
+        <div class='med-adverse-events'>
+        </div>
+
+        <div class='adverse-disclaimer'>
+          <p>*यह जानकारी राष्ट्रीय स्वास्थ्य संस्थान से ली गई है। इसे पूरा नहीं माना जाना चाहिए, न ही डॉक्टर के परामर्श किए बिना अपने उपचार के नियमों के बारे में निर्णय लेने के लिए इसका इस्तेमाल करना चाहिए।</p>
+        </div>
+      </div>
+
+      <div class='clinical-trials'>
+        <!-- pull data from aidsinfo.nih.gov -->
+      </div>
+      <div class='interactions'>
+        <!-- posssible interaction checker? where to put? -->
+      </div>
+    </div>
+
+    <div class='footer'>
+    यह जानकारी चिकित्सा सलाह के रूप में सेवा करने का इरादा नहीं है। कृपया पढ़ें <a href='disclaimer.html'>अस्वीकरण</a>.
+    </div>
+
+    <script src='../assets/CryptoJS/rollups/hmac-sha256.js'></script>
+    <script src='../assets/CryptoJS/components/enc-base64-min.js'></script>
+    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDxPMhu1--0LGnlLExOdsJKQvqN7bv0AJE&callback=initMap' defer type='text/javascript'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js'></script>
+    <script type='text/javascript' src='../scripts/config.js'></script>
+    <script type='text/javascript' src='../scripts/price-widget.js'></script>
+    <script type='text/javascript' src='../scripts/med-script.js'></script>
+    <script type='text/javascript' src='../scripts/get-aidsinfogov.js'></script>
+    <script type='text/javascript' src='../scripts/get-fdainfo.js'></script>
+    <!-- <script type='text/javascript' src='clinic-script.js'></script> -->
+    <script type='text/javascript' src='../scripts/locator-script.js'></script>
+    </script>
+  </body>
+</html>
